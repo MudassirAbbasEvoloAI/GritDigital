@@ -533,6 +533,7 @@ const MANAGEMENT_TEAM = ALL_TEAMS[0].members;
 
 // ─── Shared Logo ──────────────────────────────────────────────────────────────
 
+
 function Logo({ onClick }) {
   return (
     <div className="flex items-center gap-2 cursor-pointer" onClick={onClick}>
