@@ -485,7 +485,6 @@ const ALL_TEAMS = [
       { name: 'Muneeb', role: 'Lead Outreach Executive' },
       { name: 'Haroon', role: 'Meta Ads Expert' },
       { name: 'Adil', role: 'Social Media Manager' },
-      { name: 'Kinza', role: 'Social Media Manager' },
       { name: 'Umar Khalil', role: 'Content Writer' },
       { name: 'Aneeqa', role: 'Content Writer' },
     ],
