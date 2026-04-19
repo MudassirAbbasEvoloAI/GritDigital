@@ -531,7 +531,9 @@ const ALL_TEAMS = [
 
 const MANAGEMENT_TEAM = ALL_TEAMS[0].members;
 
-// ─── Shared Logo ──────────────────────────────────────────────────────────────
+// ─── Shared Logo ───────────────
+// ───────────────────────────────────────────────
+
 
 
 function Logo({ onClick }) {
