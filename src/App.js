@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Menu, X, ChevronRight, Rocket, Camera,
-  PenTool, Video, Smartphone, Users, Bot, TrendingUp,
+  Menu, X, ChevronRight, Camera,
+  PenTool, Smartphone, Users, Bot, TrendingUp,
   Target, CheckCircle, ArrowRight, Mail, Phone, MapPin,
   BarChart3, Zap, Globe, Share2, Link, ArrowLeft,
   Code, TabletSmartphone, Palette, Clapperboard,
@@ -1728,7 +1728,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
               </p>
               <div className="flex gap-3">
                 {[{ icon: <Globe size={18} />, label: 'Instagram' }, { icon: <Share2 size={18} />, label: 'LinkedIn' }, { icon: <Link size={18} />, label: 'Twitter' }].map((s, i) => (
-                  <a key={i} href="#" aria-label={s.label} className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-orange-500 hover:border-orange-500/50 transition-colors">{s.icon}</a>
+                  <button key={i} aria-label={s.label} className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-orange-500 hover:border-orange-500/50 transition-colors">{s.icon}</button>
                 ))}
               </div>
             </div>
