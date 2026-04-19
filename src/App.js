@@ -539,7 +539,12 @@ const MANAGEMENT_TEAM = ALL_TEAMS[0].members;
 function Logo({ onClick }) {
   return (
     <div className="flex items-center gap-2 cursor-pointer" onClick={onClick}>
-      <img src="/images/logo.jpeg" alt="Grit Digital" className="h-9 w-auto object-contain" />
+      <div className="w-8 h-8 bg-orange-600 rounded-sm flex items-center justify-center transform rotate-45">
+        <div className="w-4 h-4 bg-zinc-950 rounded-sm transform -rotate-45"></div>
+      </div>
+      <span className="text-xl font-bold tracking-tight">
+        Grit <span className="text-orange-500">Digital</span>
+      </span>
     </div>
   );
 }
@@ -1268,8 +1273,11 @@ function TeamPage({ setCurrentPage, scrollToSection }) {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {group.members.map((member, mIdx) => (
                 <div key={mIdx} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-200 group">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center mb-4 text-xl font-bold text-orange-400 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
-                    {member.name.charAt(0)}
+                  <div className="w-14 h-14 rounded-full overflow-hidden mb-4 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
+                    {member.img
+                      ? <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
+                      : <div className="w-full h-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center text-xl font-bold text-orange-400">{member.name.charAt(0)}</div>
+                    }
                   </div>
                   <h4 className="font-bold text-white text-sm leading-tight">{member.name}</h4>
                   <p className="text-zinc-500 text-xs mt-1.5 leading-relaxed">{member.role}</p>
@@ -1566,8 +1574,11 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {MANAGEMENT_TEAM.map((member, mIdx) => (
                 <div key={mIdx} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-orange-500/40 transition-colors group">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center mb-4 text-xl font-bold text-orange-400 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
-                    {member.name.charAt(0)}
+                  <div className="w-14 h-14 rounded-full overflow-hidden mb-4 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
+                    {member.img
+                      ? <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
+                      : <div className="w-full h-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center text-xl font-bold text-orange-400">{member.name.charAt(0)}</div>
+                    }
                   </div>
                   <h4 className="font-bold text-white text-sm leading-tight">{member.name}</h4>
                   <p className="text-zinc-500 text-xs mt-1.5 leading-relaxed">{member.role}</p>
