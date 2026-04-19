@@ -10,12 +10,6 @@ import {
 
 // ─── Portfolio Data ───────────────────────────────────────────────────────────
 
-// Three colour tokens used consistently across all portfolio cards
-// A = orange  B = dark-neutral  C = muted-deep  (cycle: A B C A B C …)
-const PA = { g: 'from-orange-600/25 via-orange-500/10 to-zinc-950',  a: 'text-orange-400' };
-const PB = { g: 'from-zinc-700/55  via-zinc-800/25  to-zinc-950',    a: 'text-orange-400' };
-const PC = { g: 'from-orange-900/35 via-zinc-800/20  to-zinc-950',   a: 'text-orange-400' };
-
 const PORTFOLIO = [
   {
     id: 'luxethreads',
@@ -23,219 +17,229 @@ const PORTFOLIO = [
     industry: 'Fashion E-commerce',
     tagline: 'Social Growth & Content Strategy',
     tags: ['Marketing', 'Social Media', 'Content'],
-    gradient: PA.g, accent: PA.a,
+    gradient: 'from-orange-600/30 via-red-500/20 to-zinc-900',
+    accent: 'text-orange-400',
     featured: true,
     challenge:
-      'LuxeThreads had no content strategy — posts were sporadic, engagement had flatlined below 1%, and paid ads were burning budget with minimal return. The brand lacked a consistent visual identity online.',
+      'LuxeThreads was posting inconsistently with no content strategy. Their engagement rate had flatlined at under 1% and paid ads were burning budget without conversions.',
     solution:
-      'We audited the brand, rebuilt the content calendar around audience insights, introduced AI-assisted Reels scripts, and launched a structured Meta ads campaign with retargeting funnels. Creative A/B testing identified winning formats within three weeks.',
+      'We audited their brand, rebuilt their content calendar, introduced AI-assisted Reels scripts, and launched a targeted Meta ads campaign with retargeting funnels. A/B testing revealed the winning creative formats within 3 weeks.',
     services: ['Social Media Management', 'Digital Marketing & Strategy', 'AI-Assisted Content', 'Video Editing'],
     stats: [
-      { label: 'Organic Reach',     value: '↑ 340%' },
-      { label: 'Engagement Rate',   value: '4.7%'   },
-      { label: 'Social Revenue',    value: '↑ 128%' },
-      { label: 'Ad ROAS',           value: '3.9x'   },
+      { label: 'Reach Growth', value: '↑ 340%' },
+      { label: 'Engagement Rate', value: '4.7%' },
+      { label: 'Social Revenue', value: '↑ 128%' },
+      { label: 'Ad ROAS', value: '3.9x' },
     ],
     duration: '3 months',
-    deliverables: ['30 Reels/month', 'Meta paid campaigns', 'Monthly performance reports', 'Content calendar'],
+    deliverables: ['30 Reels/month', 'Paid ad campaigns', 'Monthly analytics reports', 'Content calendar'],
   },
   {
     id: 'finlytics',
     client: 'Finlytics',
     industry: 'Fintech / Mobile App',
-    tagline: 'User Acquisition & Growth Automation',
+    tagline: 'Lead Generation & App Growth Campaign',
     tags: ['Marketing', 'Automation', 'App'],
-    gradient: PB.g, accent: PB.a,
+    gradient: 'from-blue-600/30 via-indigo-500/20 to-zinc-900',
+    accent: 'text-blue-400',
     featured: true,
     challenge:
-      'High cost-per-install, poor-quality leads, and a 78% onboarding drop-off were draining their runway. With no CRM in place, leads that did convert were slipping through the cracks.',
+      'A promising fintech app with high cost-per-install and very low qualified lead volume. Their onboarding funnel had a 78% drop-off and they had no CRM to follow up with prospects.',
     solution:
-      'We restructured the entire acquisition funnel — built a GoHighLevel CRM with automated nurture sequences, launched performance campaigns on TikTok and Google UAC, and redesigned the onboarding landing page for conversion.',
+      'We rebuilt their acquisition funnel, set up GoHighLevel CRM with automated email sequences, launched targeted TikTok and Google UAC campaigns, and redesigned the onboarding flow landing page.',
     services: ['Digital Marketing & Strategy', 'Marketing Automation & Systems', 'Web Development'],
     stats: [
-      { label: 'Cost Per Install',      value: '↓ 42%' },
-      { label: 'Qualified Leads',       value: '↑ 500%' },
-      { label: 'Ad Spend ROI',          value: '4.8x'   },
-      { label: 'Onboarding Drop-off',   value: '↓ 61%'  },
+      { label: 'Cost Per Install', value: '↓ 42%' },
+      { label: 'Qualified Leads', value: '↑ 500%' },
+      { label: 'Ad Spend ROI', value: '4.8x' },
+      { label: 'Onboarding Drop-off', value: '↓ 61%' },
     ],
     duration: '4 months',
-    deliverables: ['CRM + automation setup', 'Landing page redesign', 'TikTok & Google campaigns', 'Weekly reporting'],
+    deliverables: ['CRM setup & automation', 'Landing page redesign', 'TikTok + Google campaigns', 'Weekly reporting'],
   },
   {
     id: 'glowco',
     client: 'GlowCo',
     industry: 'Skincare & Beauty',
-    tagline: 'Viral Influencer & UGC Product Launch',
+    tagline: 'Viral Influencer & UGC Launch Campaign',
     tags: ['Influencer', 'Content', 'Social Media'],
-    gradient: PC.g, accent: PC.a,
+    gradient: 'from-pink-600/30 via-rose-400/20 to-zinc-900',
+    accent: 'text-pink-400',
     featured: true,
     challenge:
-      'A new skincare line needed maximum launch-day impact on a limited budget — with no existing audience, no brand awareness, and a 48-hour sell-through target set by the founders.',
+      'Launching a new product line on a limited budget with zero brand awareness. They needed high-impact content and organic reach without a large paid media spend.',
     solution:
-      'We activated 45 carefully vetted micro-influencers with detailed UGC briefs, coordinated a synchronised launch-day post campaign, and seeded product to lifestyle creators across Instagram and TikTok. The campaign trended organically within 24 hours.',
+      'We recruited 45 micro-influencers, created detailed UGC briefs, coordinated a simultaneous launch day post campaign, and seeded the product to food and lifestyle creators. The campaign went organically viral within 48 hours.',
     services: ['Influencer Marketing', 'AI-Assisted Content', 'Social Media Management', 'Photography & Production'],
     stats: [
-      { label: 'Organic Impressions',   value: '2.3M'    },
-      { label: 'UGC Posts Created',     value: '12,000+' },
-      { label: 'Stock Sold Out In',     value: '48 Hrs'  },
-      { label: 'Influencers Activated', value: '45'      },
+      { label: 'Organic Impressions', value: '2.3M' },
+      { label: 'UGC Posts', value: '12,000+' },
+      { label: 'Sold Out In', value: '48 Hrs' },
+      { label: 'Influencers Activated', value: '45' },
     ],
     duration: '6 weeks',
-    deliverables: ['Influencer strategy & outreach', 'UGC briefs & coordination', 'Product shoot', 'Campaign analytics'],
+    deliverables: ['Influencer strategy & outreach', 'UGC briefs & coordination', 'Product shoot', 'Campaign reporting'],
   },
   {
     id: 'techvision',
     client: 'TechVision Summit',
     industry: 'Corporate Events',
-    tagline: '360° Event Coverage & Live Content',
+    tagline: '360° Event Coverage & Real-time Content',
     tags: ['Production', 'Social Media', 'Content'],
-    gradient: PA.g, accent: PA.a,
+    gradient: 'from-zinc-600/40 via-zinc-700/20 to-zinc-900',
+    accent: 'text-zinc-300',
     featured: true,
     challenge:
-      'A high-profile two-day tech summit required professional photo and video coverage, real-time social content to generate buzz, and same-day highlight packages for sponsors and speakers.',
+      'A high-profile tech summit needed comprehensive content coverage that could generate real-time social buzz, provide professional media for sponsors, and produce post-event highlight material.',
     solution:
-      'We fielded a five-person production team — two photographers, a videographer, a drone operator, and a dedicated social media manager — publishing live content and delivering edited highlights on the day.',
+      'We deployed a 5-person production team for 2 days — photographers, videographers, and a dedicated social media manager posting live. Same-day highlight edits were published within hours of each session.',
     services: ['Photography & Production', 'Video Editing', 'Social Media Management'],
     stats: [
-      { label: 'Content Pieces',     value: '150+' },
-      { label: 'Hashtag Trending',   value: '2 Days'   },
-      { label: 'Highlight Delivery', value: 'Same Day' },
-      { label: 'Client Rating',      value: '5 / 5'   },
+      { label: 'Content Pieces', value: '150+' },
+      { label: 'Local Trending', value: '2 Days' },
+      { label: 'Highlight Reel', value: 'Same Day' },
+      { label: 'Client Rating', value: '5 / 5' },
     ],
-    duration: '2-day event + 1-week post-production',
-    deliverables: ['500+ edited photos', '3 highlight reels', 'Live social coverage', 'Sponsor content package'],
+    duration: '2-day event + 1 week post',
+    deliverables: ['500+ edited photos', '3 highlight reels', 'Social media coverage', 'Sponsor content package'],
   },
   {
     id: 'novabite',
     client: 'NovaBite',
     industry: 'Restaurant & F&B',
-    tagline: 'Brand Identity & Pre-Opening Digital Launch',
+    tagline: 'Brand Identity & Social Media Launch',
     tags: ['Branding', 'Production', 'Social Media'],
-    gradient: PB.g, accent: PB.a,
+    gradient: 'from-amber-600/30 via-yellow-500/20 to-zinc-900',
+    accent: 'text-amber-400',
     featured: false,
     challenge:
-      'A premium restaurant concept with a strong culinary identity but no brand, no digital presence, and a six-week window before opening day. First impressions in the F&B sector are made online.',
+      'A new restaurant with a strong concept but zero visual identity and no digital presence. They needed a brand built from scratch before opening day — with a 6-week deadline.',
     solution:
-      'We designed a complete brand identity from scratch — logo, colour palette, typography, and guidelines — followed by a full food and interior photoshoot. We launched Instagram and TikTok accounts with 12 polished posts ready to go live.',
+      'We created a full brand identity including logo, colour system, typography, and brand guidelines. We then did a full food & interior photoshoot and launched their Instagram and TikTok with 12 ready-to-post pieces.',
     services: ['Branding & Design', 'Photography & Production', 'Social Media Management'],
     stats: [
-      { label: 'Brand Assets',          value: '60+'  },
-      { label: 'Opening Week Reach',    value: '85K'  },
-      { label: 'Followers at Launch',   value: '1,200' },
-      { label: 'Delivered In',          value: '6 Wks' },
+      { label: 'Brand Assets Delivered', value: '60+' },
+      { label: 'Opening Week Reach', value: '85K' },
+      { label: 'Instagram Followers', value: '1,200' },
+      { label: 'Turnaround Time', value: '6 Wks' },
     ],
     duration: '6 weeks',
-    deliverables: ['Full brand identity kit', 'Menu & packaging design', 'Food & interior shoot', 'Social launch package'],
+    deliverables: ['Full brand identity kit', 'Menu & packaging design', 'Food & interior shoot', 'Social media launch'],
   },
   {
     id: 'peakfit',
     client: 'PeakFit',
-    industry: 'Health & Fitness Tech',
-    tagline: 'Cross-Platform Fitness App — Concept to Launch',
+    industry: 'Health & Fitness',
+    tagline: 'Fitness Tracking App — MVP to Launch',
     tags: ['App', 'Branding', 'Marketing'],
-    gradient: PC.g, accent: PC.a,
+    gradient: 'from-green-600/30 via-emerald-500/20 to-zinc-900',
+    accent: 'text-green-400',
     featured: false,
     challenge:
-      'A fitness startup had detailed wireframes and investor interest but no development team. They needed a working cross-platform MVP — with branding and an App Store presence — in 11 weeks.',
+      'A fitness startup needed a fully functional cross-platform mobile app within 12 weeks for an investor demo. They had a concept and wireframes but no development team.',
     solution:
-      'We built a React Native app covering workout tracking, progress analytics, push notifications, and a social challenge feed. The project included UI/UX design, brand identity, App Store and Play Store submissions, and a launch landing page.',
+      'We delivered a React Native MVP with workout tracking, progress charts, push notifications, and a social feed. App branding, App Store listing graphics, and a launch landing page were included in the project scope.',
     services: ['Mobile App Development', 'Branding & Design', 'Web Development'],
     stats: [
-      { label: 'Delivered In',       value: '11 Wks' },
-      { label: 'Screens Designed',   value: '42'      },
-      { label: 'Day-1 Downloads',    value: '800+'    },
-      { label: 'App Store Rating',   value: '4.6 ★'   },
+      { label: 'App Build Time', value: '11 Wks' },
+      { label: 'Screens Designed', value: '42' },
+      { label: 'Day-1 Downloads', value: '800+' },
+      { label: 'App Store Rating', value: '4.6 ★' },
     ],
     duration: '11 weeks',
-    deliverables: ['iOS & Android app', 'Full UI/UX system', 'App Store submission', 'Launch landing page'],
+    deliverables: ['iOS & Android app', 'UI/UX design system', 'App Store submission', 'Launch landing page'],
   },
   {
     id: 'buildify',
     client: 'Buildify',
     industry: 'Construction & Real Estate',
-    tagline: 'Corporate Website & Automated Lead Pipeline',
+    tagline: 'Corporate Website & Lead Generation System',
     tags: ['Web Dev', 'Marketing', 'Automation'],
-    gradient: PA.g, accent: PA.a,
+    gradient: 'from-slate-600/30 via-gray-500/20 to-zinc-900',
+    accent: 'text-slate-300',
     featured: false,
     challenge:
-      'An established construction firm had no digital footprint — no website, no online leads, and no way to showcase a decade of completed projects. They were losing competitive bids to less-experienced firms with better online presence.',
+      'An established construction firm with zero digital presence and no way to capture leads online. All business came from referrals and they were losing competitive bids due to having no professional website.',
     solution:
-      'We built a performance-optimised corporate website with project portfolio, team profiles, and service pages. A GoHighLevel CRM was integrated with a lead capture form and automated follow-up email sequences to convert enquiries into consultations.',
+      'We built a high-performance WordPress website with project portfolio, team pages, and service detail pages. We integrated a lead capture form connected to a GoHighLevel CRM with automated follow-up sequences.',
     services: ['Web Development', 'Branding & Design', 'Marketing Automation & Systems'],
     stats: [
-      { label: 'Inbound Leads/Month', value: '35+'     },
-      { label: 'Page Load Time',      value: '< 1.8s'  },
-      { label: 'Google Position',     value: 'Page 1'  },
-      { label: 'Lead Conversion',     value: '18%'     },
+      { label: 'Organic Leads / Month', value: '35+' },
+      { label: 'Page Load Speed', value: '< 1.8s' },
+      { label: 'Google Ranking', value: 'Page 1' },
+      { label: 'Lead Conversion', value: '18%' },
     ],
     duration: '8 weeks',
-    deliverables: ['12-page custom website', 'CRM & email automation', 'On-page SEO', 'Brand visual refresh'],
+    deliverables: ['12-page custom website', 'CRM + email automation', 'SEO setup', 'Brand refresh'],
   },
   {
     id: 'aurabeauty',
     client: 'AuraBeauty',
     industry: 'Beauty & Cosmetics',
-    tagline: 'Social Media Overhaul & Reels Growth Strategy',
+    tagline: 'Full-Scale Social Media Transformation',
     tags: ['Social Media', 'Production', 'Branding'],
-    gradient: PB.g, accent: PB.a,
+    gradient: 'from-rose-600/30 via-fuchsia-500/20 to-zinc-900',
+    accent: 'text-rose-400',
     featured: false,
     challenge:
-      'A cosmetics brand with a loyal customer base had a stagnant social presence — inconsistent feed aesthetics, no Reels strategy, and organic reach in sharp decline. Video was the obvious growth lever but had never been activated.',
+      'A cosmetics brand with a loyal but stagnant audience. Their feed was inconsistent, content was outdated, and they had no Reels strategy despite video being their biggest growth lever.',
     solution:
-      'We refreshed the Instagram grid aesthetic, implemented a Reels-first content strategy with weekly shoots, and launched TikTok from zero. Trend-led short-form content drove rapid follower growth across both platforms within 90 days.',
+      'We rebranded their Instagram aesthetic, introduced a Reels-first content strategy, conducted monthly product shoots, and grew their TikTok from 0 to 15K followers in 90 days through trend-based content.',
     services: ['Social Media Management', 'Photography & Production', 'Branding & Design', 'Video Editing'],
     stats: [
-      { label: 'TikTok Followers',  value: '15K / 90d' },
-      { label: 'Avg. Reel Views',   value: '45K+'      },
-      { label: 'Profile Visits',    value: '↑ 210%'    },
-      { label: 'DM Enquiries',      value: '↑ 3x'      },
+      { label: 'TikTok Followers', value: '15K in 90d' },
+      { label: 'Avg. Reel Views', value: '45K+' },
+      { label: 'Profile Visits', value: '↑ 210%' },
+      { label: 'DM Inquiries', value: '↑ 3x' },
     ],
-    duration: 'Ongoing — 3+ months',
-    deliverables: ['20 Reels/month', 'Monthly product shoot', 'TikTok account management', 'Brand aesthetic refresh'],
+    duration: 'Ongoing (3+ months)',
+    deliverables: ['20 Reels/month', 'Monthly product shoot', 'TikTok management', 'Brand refresh'],
   },
   {
     id: 'clearmind',
     client: 'ClearMind',
     industry: 'Mental Wellness / SaaS',
-    tagline: 'Wellness App MVP & Investor-Ready Growth Funnel',
+    tagline: 'Wellness App + Acquisition Funnel',
     tags: ['App', 'Marketing', 'Automation'],
-    gradient: PC.g, accent: PC.a,
+    gradient: 'from-violet-600/30 via-purple-500/20 to-zinc-900',
+    accent: 'text-violet-400',
     featured: false,
     challenge:
-      'A mental wellness startup needed a functioning app and a proven acquisition funnel before a funding round — with 8 weeks on the clock and a budget that had to stretch across product and marketing simultaneously.',
+      'A mental wellness startup needed an MVP app and a full acquisition funnel before a funding round. They had 8 weeks and a tight budget that had to cover both product and marketing.',
     solution:
-      'We delivered a React Native app for meditation and mood tracking alongside a high-converting landing page, an automated email onboarding sequence, and a Meta ads campaign. The combined output gave the founders credible traction metrics for their investor deck.',
+      'We delivered a React Native meditation and mood-tracking app alongside a conversion-optimised landing page, email onboarding sequence, and a Meta ads campaign targeting therapy-curious millennials.',
     services: ['Mobile App Development', 'Web Development', 'Digital Marketing & Strategy', 'Marketing Automation & Systems'],
     stats: [
-      { label: 'App Delivered In',     value: '8 Wks'   },
-      { label: 'Trial Sign-ups',       value: '2,400+'  },
-      { label: 'Email Open Rate',      value: '38%'     },
-      { label: 'Funding Round',        value: 'Secured' },
+      { label: 'App Delivered In', value: '8 Wks' },
+      { label: 'Free Trial Sign-ups', value: '2,400+' },
+      { label: 'Email Open Rate', value: '38%' },
+      { label: 'Funding Secured', value: '✓' },
     ],
     duration: '8 weeks',
-    deliverables: ['Cross-platform app', 'Conversion landing page', 'Email automation', 'Paid acquisition campaigns'],
+    deliverables: ['Cross-platform app', 'Landing page', 'Email automation', 'Paid campaigns'],
   },
   {
     id: 'zestmarket',
     client: 'ZestMarket',
     industry: 'Grocery E-commerce',
-    tagline: 'Platform Migration, SEO & Performance Marketing',
+    tagline: 'E-commerce Store & SEO Growth',
     tags: ['Web Dev', 'Marketing'],
-    gradient: PA.g, accent: PA.a,
+    gradient: 'from-teal-600/30 via-cyan-500/20 to-zinc-900',
+    accent: 'text-teal-400',
     featured: false,
     challenge:
-      'A growing online grocery brand was haemorrhaging customers at checkout due to a slow, outdated platform. Their SEO was non-existent and paid acquisition had no structure, resulting in a negative ROAS.',
+      'A growing online grocery store built on a slow, poorly optimised platform that was losing customers at checkout. SEO was non-existent and they had no paid strategy.',
     solution:
-      'We migrated the store to Shopify with a mobile-first UX redesign optimised for checkout conversion. A full on-page SEO implementation followed, alongside a structured Google Shopping campaign with automated smart bidding.',
+      'We migrated the store to Shopify, rebuilt the UX for mobile-first checkout, implemented a full on-page SEO structure, and launched Google Shopping campaigns with smart bidding.',
     services: ['Web Development', 'Digital Marketing & Strategy'],
     stats: [
-      { label: 'Cart Abandonment',        value: '↓ 38%'   },
-      { label: 'Organic Traffic',         value: '↑ 290%'  },
-      { label: 'Google Shopping ROAS',    value: '5.2x'    },
-      { label: 'Page Speed Score',        value: '94 / 100' },
+      { label: 'Checkout Abandonment', value: '↓ 38%' },
+      { label: 'Organic Traffic', value: '↑ 290%' },
+      { label: 'Google Shopping ROAS', value: '5.2x' },
+      { label: 'Page Speed Score', value: '94/100' },
     ],
     duration: '10 weeks',
-    deliverables: ['Shopify migration & redesign', 'Full SEO implementation', 'Google Shopping setup', 'Checkout optimisation'],
+    deliverables: ['Shopify migration', 'SEO audit & implementation', 'Google Shopping setup', 'Conversion optimisation'],
   },
 ];
 
@@ -470,7 +474,7 @@ const ALL_TEAMS = [
       { name: 'Mudasir',        role: 'Co-Founder & CTO',                 img: '/images/mudassir.png' },
       { name: 'Rida Chaudhary', role: 'Co-Founder & Executive Director',  img: '/images/rida.png'     },
       { name: 'Sadia Parveen',  role: 'Managing Director',                img: '/images/sadia.png'    },
-      { name: 'Inam ul Haq',     role: 'Co-Founder & CCO',                 img: '/images/inam.png'     },
+      { name: 'Inam ul Haq',     role: 'Co-Founder & CCO',                img: '/images/inam.png'     },
     ],
   },
   {
@@ -536,7 +540,7 @@ function Logo({ onClick }) {
         <div className="w-4 h-4 bg-zinc-950 rounded-sm transform -rotate-45"></div>
       </div>
       <span className="text-xl font-bold tracking-tight">
-        Grit <span className="text-orange-500">Digital</span>
+        Grit Growth <span className="text-orange-500">Digital</span>
       </span>
     </div>
   );
@@ -614,7 +618,7 @@ function AboutPage({ setCurrentPage, scrollToSection }) {
             brands <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">grow without limits.</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed">
-            Grit Digital is a full-service agency built for ambitious brands — combining sharp marketing strategy, in-house creative production, AI-powered workflows, and software development under one roof.
+            Grit Growth Digital is a full-service agency built for ambitious brands — combining sharp marketing strategy, in-house creative production, AI-powered workflows, and software development under one roof.
           </p>
         </div>
       </div>
@@ -649,7 +653,7 @@ function AboutPage({ setCurrentPage, scrollToSection }) {
               </h3>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  Grit Digital was founded by a team of marketers, creatives, and technologists who had seen too many brands waste budget on agencies that prioritised vanity metrics over real business results.
+                  Grit Growth Digital was founded by a team of marketers, creatives, and technologists who had seen too many brands waste budget on agencies that prioritised vanity metrics over real business results.
                 </p>
                 <p>
                   We set out to build something different — an agency that operates with the transparency of a consultancy, the creativity of a production house, and the technical capability of a software studio. No fluff. No jargon. Just focused, measurable growth.
@@ -1266,11 +1270,8 @@ function TeamPage({ setCurrentPage, scrollToSection }) {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {group.members.map((member, mIdx) => (
                 <div key={mIdx} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-200 group">
-                  <div className="w-14 h-14 rounded-full overflow-hidden mb-4 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
-                    {member.img
-                      ? <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
-                      : <div className="w-full h-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center text-xl font-bold text-orange-400">{member.name.charAt(0)}</div>
-                    }
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center mb-4 text-xl font-bold text-orange-400 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
+                    {member.name.charAt(0)}
                   </div>
                   <h4 className="font-bold text-white text-sm leading-tight">{member.name}</h4>
                   <p className="text-zinc-500 text-xs mt-1.5 leading-relaxed">{member.role}</p>
@@ -1384,7 +1385,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">we build growth engines.</span>
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-                Grit Digital is a full-service agency built for brands that are serious about scaling. We combine sharp marketing strategy, in-house creative production, cutting-edge AI tools, and software development — so you never have to juggle multiple vendors again.
+                Grit Growth Digital is a full-service agency built for brands that are serious about scaling. We combine sharp marketing strategy, in-house creative production, cutting-edge AI tools, and software development — so you never have to juggle multiple vendors again.
               </p>
               <div className="flex flex-wrap gap-3">
                 {['Strategy-first', 'AI-powered', 'In-house team', 'Full-service', 'Result-driven'].map((tag) => (
@@ -1567,11 +1568,8 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {MANAGEMENT_TEAM.map((member, mIdx) => (
                 <div key={mIdx} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-orange-500/40 transition-colors group">
-                  <div className="w-14 h-14 rounded-full overflow-hidden mb-4 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
-                    {member.img
-                      ? <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
-                      : <div className="w-full h-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center text-xl font-bold text-orange-400">{member.name.charAt(0)}</div>
-                    }
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange-600/30 to-zinc-800 flex items-center justify-center mb-4 text-xl font-bold text-orange-400 border border-zinc-700 group-hover:border-orange-500/50 transition-colors">
+                    {member.name.charAt(0)}
                   </div>
                   <h4 className="font-bold text-white text-sm leading-tight">{member.name}</h4>
                   <p className="text-zinc-500 text-xs mt-1.5 leading-relaxed">{member.role}</p>
@@ -1602,7 +1600,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
         <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-transparent pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">Why Grit Digital?</h2>
+            <h2 className="text-4xl font-bold mb-6">Why Grit Growth Digital?</h2>
             <p className="text-zinc-400 text-lg">One agency for marketing, design, production, and development. No handoffs. No silos. Just results.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1753,7 +1751,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
             </div>
           </div>
           <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-zinc-600 text-sm">© {new Date().getFullYear()} Grit Digital. All rights reserved.</p>
+            <p className="text-zinc-600 text-sm">© {new Date().getFullYear()} Grit Growth Digital. All rights reserved.</p>
             <p className="text-zinc-600 text-sm">Built with <span className="text-orange-500">Grit</span>.</p>
           </div>
         </div>
