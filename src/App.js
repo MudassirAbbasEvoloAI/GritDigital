@@ -1645,9 +1645,9 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
               <h3 className="text-2xl font-bold mb-8">Get in Touch</h3>
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: <Mail size={20} />, label: 'Email', value: 'hello@gritgrowthdigital.com' },
-                  { icon: <Phone size={20} />, label: 'Phone', value: '+92 300 0000000' },
-                  { icon: <MapPin size={20} />, label: 'Location', value: 'Lahore, Pakistan' },
+                  { icon: <Mail size={20} />, label: 'Email', value: 'gritgrowthbymuntazir@gmail.com' },
+                  { icon: <Phone size={20} />, label: 'Phone', value: '+92 330 3947050' },
+                  { icon: <MapPin size={20} />, label: 'Location', value: 'Multan, Pakistan' },
                 ].map((info, idx) => (
                   <div key={idx} className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-xl bg-orange-600/10 border border-orange-500/20 flex items-center justify-center text-orange-500 shrink-0">{info.icon}</div>
