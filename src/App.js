@@ -539,12 +539,7 @@ const MANAGEMENT_TEAM = ALL_TEAMS[0].members;
 function Logo({ onClick }) {
   return (
     <div className="flex items-center gap-2 cursor-pointer" onClick={onClick}>
-      <div className="w-8 h-8 bg-orange-600 rounded-sm flex items-center justify-center transform rotate-45">
-        <div className="w-4 h-4 bg-zinc-950 rounded-sm transform -rotate-45"></div>
-      </div>
-      <span className="text-xl font-bold tracking-tight">
-        Grit Growth <span className="text-orange-500">Digital</span>
-      </span>
+      <img src="/images/logo.jpeg" alt="Grit Digital" className="h-9 w-auto object-contain" />
     </div>
   );
 }
@@ -621,7 +616,7 @@ function AboutPage({ setCurrentPage, scrollToSection }) {
             brands <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">grow without limits.</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed">
-            Grit Growth Digital is a full-service agency built for ambitious brands — combining sharp marketing strategy, in-house creative production, AI-powered workflows, and software development under one roof.
+            Grit Digital is a full-service agency built for ambitious brands — combining sharp marketing strategy, in-house creative production, AI-powered workflows, and software development under one roof.
           </p>
         </div>
       </div>
@@ -656,7 +651,7 @@ function AboutPage({ setCurrentPage, scrollToSection }) {
               </h3>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  Grit Growth Digital was founded by a team of marketers, creatives, and technologists who had seen too many brands waste budget on agencies that prioritised vanity metrics over real business results.
+                  Grit Digital was founded by a team of marketers, creatives, and technologists who had seen too many brands waste budget on agencies that prioritised vanity metrics over real business results.
                 </p>
                 <p>
                   We set out to build something different — an agency that operates with the transparency of a consultancy, the creativity of a production house, and the technical capability of a software studio. No fluff. No jargon. Just focused, measurable growth.
@@ -1388,7 +1383,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">we build growth engines.</span>
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-                Grit Growth Digital is a full-service agency built for brands that are serious about scaling. We combine sharp marketing strategy, in-house creative production, cutting-edge AI tools, and software development — so you never have to juggle multiple vendors again.
+                Grit Digital is a full-service agency built for brands that are serious about scaling. We combine sharp marketing strategy, in-house creative production, cutting-edge AI tools, and software development — so you never have to juggle multiple vendors again.
               </p>
               <div className="flex flex-wrap gap-3">
                 {['Strategy-first', 'AI-powered', 'In-house team', 'Full-service', 'Result-driven'].map((tag) => (
@@ -1603,7 +1598,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
         <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-transparent pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">Why Grit Growth Digital?</h2>
+            <h2 className="text-4xl font-bold mb-6">Why Grit Digital?</h2>
             <p className="text-zinc-400 text-lg">One agency for marketing, design, production, and development. No handoffs. No silos. Just results.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1754,7 +1749,7 @@ function HomePage({ setCurrentPage, scrollToSection, formData, setFormData, form
             </div>
           </div>
           <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-zinc-600 text-sm">© {new Date().getFullYear()} Grit Growth Digital. All rights reserved.</p>
+            <p className="text-zinc-600 text-sm">© {new Date().getFullYear()} Grit Digital. All rights reserved.</p>
             <p className="text-zinc-600 text-sm">Built with <span className="text-orange-500">Grit</span>.</p>
           </div>
         </div>
