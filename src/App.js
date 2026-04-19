@@ -481,7 +481,9 @@ const ALL_TEAMS = [
     category: 'Growth & Marketing', emoji: '📈',
     members: [
       { name: 'Waraq', role: 'Senior Growth Strategist' },
-      { name: 'Bushra', role: 'SMM Executive' },
+      { name: 'Fatima', role: 'Lead Outreach Executive' },
+      { name: 'Muneeb', role: 'Lead Outreach Executive' },
+      { name: 'Haroon', role: 'Meta Ads Expert' },
       { name: 'Adil', role: 'Social Media Manager' },
       { name: 'Kinza', role: 'Social Media Manager' },
       { name: 'Umar Khalil', role: 'Content Writer' },
@@ -517,12 +519,14 @@ const ALL_TEAMS = [
   },
   {
     category: 'Development', emoji: '💻',
-    members: [{ name: 'Muneeb', role: 'Junior Developer' }],
+    members: [
+      { name: 'Mudasir', role: 'Co-Founder & CTO', img: '/images/mudassir.png' },
+      { name: 'Muneeb', role: 'Junior Developer' },
+    ],
   },
   {
     category: 'Brand Ambassadors & Influencers', emoji: '🌟',
     members: [
-      { name: 'Zoha Malik', role: 'Lifestyle Influencer' },
       { name: 'Kiran Shahzadi', role: 'Influencer & Model' },
       { name: 'Laiba (Hoor Baloch)', role: 'Food Vlogger & Content Creator' },
     ],
@@ -1780,7 +1784,10 @@ export default function App() {
 
   useEffect(() => {
     const splash = document.getElementById('splash');
-    if (splash) splash.classList.add('hidden');
+    if (splash) {
+      splash.classList.add('hidden');
+      setTimeout(() => splash.remove(), 450);
+    }
   }, []);
 
   useEffect(() => {
